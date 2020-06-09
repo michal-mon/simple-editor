@@ -1,5 +1,5 @@
 @import "~normalize.css";
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap");
 
 body {
   background: white;
@@ -8,19 +8,22 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  font-family: 'Ubuntu', sans-serif;
-  background-color: #FAACA8;
-  background-image: linear-gradient(21deg, #FAACA8 0%, #DDD6F3 76%, #ffffff 100%);
+  font-family: "Ubuntu", sans-serif;
+  background-color: #faaca8;
+  background-image: linear-gradient(
+    21deg,
+    #faaca8 0%,
+    #ddd6f3 76%,
+    #ffffff 100%
+  );
   color: black;
-  
 }
 
-.editor__form{
-  
-}
-
-.editor{
-  &__form{
+.editor {
+  &__label {
+    font-size: 30px;
+  }
+  &__form {
     margin: 20px 0;
     resize: none;
     align-items: center;
@@ -31,6 +34,13 @@ body {
     max-height: 200px;
     font-weight: 300px;
   }
+  &__button {
+    background-color: indianred;
+    margin-right: 10px;
+  }
+  &__button:hover{
+    background-color: rgb(175, 83, 83);
+  }
   height: 400px;
   min-width: 500px;
   border-radius: 16px;
@@ -40,9 +50,8 @@ body {
   justify-content: center;
   flex-direction: column;
   display: flex;
-  background-color: #FBDA61;
-  background-image: linear-gradient(45deg, #FBDA61 11%, #FF5ACD 100%);
+  background-color: #fbda61;
+  background-image: linear-gradient(45deg, #fbda61 11%, #ff5acd 100%);
   font-weight: 400;
   opacity: 90%;
-
 }
